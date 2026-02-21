@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@azure/data-tables": "^13.3.2"
+  }
+}

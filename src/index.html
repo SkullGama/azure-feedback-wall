@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Wall</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Feedback Wall</h1>
+
+      <p class="muted">
+        Visitors: <span id="visitCount">...</span>
+      </p>
+
+      <section class="section">
+        <h2>Leave feedback</h2>
+        <form id="feedbackForm">
+          <input id="name" placeholder="Your name" maxlength="40" />
+          <textarea id="message" placeholder="Your message" maxlength="280" required></textarea>
+          <button type="submit">Send</button>
+          <p id="status" class="muted"></p>
+        </form>
+      </section>
+
+      <section class="section">
+        <h2>Latest</h2>
+        <ul id="feed"></ul>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
